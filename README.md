@@ -15,9 +15,11 @@ The system consists of 3 main blocks:
 
 UPDATE (03/02/2023)
 
-*First synchronous NUM_to_BCD circuit replaced with a sequential converter "bin2bcd_sequential" written in verilog that gets updated anytime there is a change in the binary input signal. The first version was not working due to slack time violations. However, the implementation of such conversion could have easily been done with combinational circuits.
+* First synchronous NUM_to_BCD circuit replaced with a sequential converter "bin2bcd_sequential" written in verilog that gets updated anytime there is a change in the binary input signal. The first version was not working due to slack time violations. However, the implementation of such conversion could have easily been done with combinational circuits.
 
-*Included BSF and BDF schematics in the commit.
+* Included BSF and BDF schematics in the commit as well as all the other project files for DE10-Lite projects.
+
+* The old NUM_to_BCD circuit is still in the commits as an example of what should NOT be done
 
 Below is shown the conversion of the binary number 1001000011 (from the switches) to 579.
 
