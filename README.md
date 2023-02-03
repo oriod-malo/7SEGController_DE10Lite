@@ -1,4 +1,4 @@
-# 7SEGController_DE10Lite (TEST version)
+# 7SEGController_DE10Lite (Completed as of 03/02/2023 update)
 
 Simple control system that displays any given number (read in binary form) in the six 7-Segment Displays in the DE10-Lite Board
 
@@ -15,7 +15,9 @@ The system consists of 3 main blocks:
 
 UPDATE (03/02/2023)
 
-First synchronous NUM_to_BCD circuit replaced with a sequential converter "bin2bcd_sequential" written in verilog that gets updated anytime there is a change in the binary input signal. The first version was not working due to slack time violations. However, the implementation of such conversion could have easily been done with combinational circuits.
+*First synchronous NUM_to_BCD circuit replaced with a sequential converter "bin2bcd_sequential" written in verilog that gets updated anytime there is a change in the binary input signal. The first version was not working due to slack time violations. However, the implementation of such conversion could have easily been done with combinational circuits.
+
+*Included BSF and BDF schematics in the commit.
 
 Below is shown the conversion of the binary number 1001000011 (from the switches) to 579.
 
