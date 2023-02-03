@@ -17,4 +17,6 @@ UPDATE (03/02/2023)
 
 First synchronous NUM_to_BCD circuit replaced with a sequential converter "bin2bcd_sequential" written in verilog that gets updated anytime there is a change in the binary input signal. The first version was not working due to slack time violations. However, the implementation of such conversion could have easily been done with combinational circuits.
 
+Below is shown the conversion of the binary number 1001000011 (from the switches) to 579.
+
 ![image](https://user-images.githubusercontent.com/123891760/216672480-03183f00-02a9-412f-9968-65f2b465ce3f.png)
